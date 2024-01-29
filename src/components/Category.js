@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Category = ({image, category}) => {
+const Category = ({ image, category }) => {
   return (
-    <Link to = {`/category/${category}`}>
+    <Link to={`/category/${category}`}>
       <CategoryItemWrapper className='flex flex-column bg-alice-blue'>
         <div className='category-item-img'>
-          <img src = {image} alt = {category} />
+          <img src={image} alt={category} />
         </div>
         <div className='category-item-name'>
           <h6>{category}</h6>
@@ -34,6 +34,12 @@ const CategoryItemWrapper = styled.div`
   }
   &:hover{
     border: 1px solid var(--clr-purple);
+    
+    -webkit-box-shadow: 9px 9px 11px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 11px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 11px -4px rgba(0, 0, 0, 0.75);
+    ${'' /* border: 1px solid red; */}
+
   }
 `;
 
