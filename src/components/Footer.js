@@ -4,60 +4,60 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faGithub, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-    const openSocialMedia = (url) => {
-        window.open(url, '_blank');
-    };
+  const openSocialMedia = (url) => {
+    window.open(url, '_blank');
+  };
 
-    return (
-        <StyledFooter>
-            <div className="container">
-                <FooterContent>
-                    <FooterLinks>
-                        <FooterSection>
-                            <FooterLink href="#">Udemy Business</FooterLink>
-                            <FooterLink href="#">Teach on Udemy</FooterLink>
-                            <FooterLink href="#">Get the app</FooterLink>
-                            <FooterLink href="#">About us</FooterLink>
-                            <FooterLink href="#">Contact us</FooterLink>
-                            <FooterLink href="#">Careers</FooterLink>
-                        </FooterSection>
-                        <FooterSection>
-                            <FooterLink href="#">Blog</FooterLink>
-                            <FooterLink href="#">Help and Support</FooterLink>
-                            <FooterLink href="#">Affiliate</FooterLink>
-                            <FooterLink href="#">Investors</FooterLink>
-                        </FooterSection>
-                        <FooterSection>
-                            <FooterLink href="#">Terms</FooterLink>
-                            <FooterLink href="#">Privacy policy</FooterLink>
-                            <FooterLink href="#">Sitemap</FooterLink>
-                            <FooterLink href="#">Accessibility statement</FooterLink>
-                        </FooterSection>
-                    </FooterLinks>
-                    <Copyright>
-                        &copy; 2024 KNOWLEDGENEST
-                    </Copyright>
-                    <AuthorInfo>
-                        SHUBHAM PARADE
-                    </AuthorInfo>
-                    <SocialIcons>
-                        <SocialIcon onClick={() => openSocialMedia('https://www.instagram.com/shubham_._sp_._')}>
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </SocialIcon>
-                        <SocialIcon onClick={() => openSocialMedia('https://www.linkedin.com/in/shubhamparade')}>
-                            <FontAwesomeIcon icon={faLinkedin} />
-                        </SocialIcon>
-                        <SocialIcon onClick={() => openSocialMedia('https://github.com/Shubham6865/react_portfolio/')}>
-                            <FontAwesomeIcon icon={faGithub} />
-                        </SocialIcon>
-                        <SocialIcon onClick={() => openSocialMedia('mailto:paradeshubham6865@gmail.com')}>
-                            <FontAwesomeIcon icon={faGoogle} />
-                        </SocialIcon>
-                    </SocialIcons>
-                </FooterContent>
-            </div>
-        </StyledFooter>
-    );
+  return (
+    <StyledFooter>
+      <div className="container">
+        <FooterContent>
+          <FooterLinks>
+            <FooterSection>
+              <FooterLink href="#">KnowledgeNest Business</FooterLink>
+              <FooterLink href="#">Teach on KnowledgeNest</FooterLink>
+              <FooterLink href="#">Get the app</FooterLink>
+              <FooterLink href="#">About us</FooterLink>
+              <FooterLink href="#">Contact us</FooterLink>
+              <FooterLink href="#">Careers</FooterLink>
+            </FooterSection>
+            <FooterSection>
+              <FooterLink href="#">Blog</FooterLink>
+              <FooterLink href="#">Help and Support</FooterLink>
+              <FooterLink href="#">Affiliate</FooterLink>
+              <FooterLink href="#">Investors</FooterLink>
+            </FooterSection>
+            <FooterSection>
+              <FooterLink href="#">Terms</FooterLink>
+              <FooterLink href="#">Privacy policy</FooterLink>
+              <FooterLink href="#">Sitemap</FooterLink>
+              <FooterLink href="#">Accessibility statement</FooterLink>
+            </FooterSection>
+          </FooterLinks>
+          <Copyright>
+            &copy; 2024 KNOWLEDGENEST
+          </Copyright>
+          <AuthorInfo>
+            SHUBHAM PARADE
+          </AuthorInfo>
+          <SocialIcons>
+            <SocialIcon onClick={() => openSocialMedia('https://www.instagram.com/shubham_._sp_._')}>
+              <FontAwesomeIcon icon={faInstagram} />
+            </SocialIcon>
+            <SocialIcon onClick={() => openSocialMedia('https://www.linkedin.com/in/shubhamparade')}>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </SocialIcon>
+            <SocialIcon onClick={() => openSocialMedia('https://github.com/Shubham6865/react_portfolio/')}>
+              <FontAwesomeIcon icon={faGithub} />
+            </SocialIcon>
+            <SocialIcon onClick={() => openSocialMedia('mailto:paradeshubham6865@gmail.com')}>
+              <FontAwesomeIcon icon={faGoogle} />
+            </SocialIcon>
+          </SocialIcons>
+        </FooterContent>
+      </div>
+    </StyledFooter>
+  );
 };
 
 const StyledFooter = styled.footer`
